@@ -143,14 +143,7 @@ void deleteAtPos(int pos) {
     delete nodeToDelete;
 }
 
-// Free all memory before exiting
-void deleteList() {
-    while (head) {
-        node* temp = head;
-        head = head->next;
-        delete temp;
-    }
-}
+
 
 int main() {
     insert(1);
@@ -173,6 +166,5 @@ int main() {
     deleteAtPos(2);
     Display();
 
-    deleteList();  // Cleanup before exiting
     return 0;
 }
