@@ -3,6 +3,9 @@ using namespace std;
 
 struct Node {
     int data;
+    string name;
+    float Cgpa;
+    int rollNo;
     Node* next;
 };
 
@@ -107,7 +110,7 @@ void display() {
     } while (temp != head);
     cout << endl;
 }
-
+void moveNode();
 // Main function
 int main() {
     insertAtEnd(10);
@@ -123,4 +126,22 @@ int main() {
     display();
 
     return 0;
+}
+
+
+
+void moveNode(){
+
+
+  Node* newNode = new Node;
+  Node* temp = head;
+
+  for (int i=0; i<2;i++){
+
+      temp = temp->next;
+}
+
+  newNode->data = temp->data;
+
+
 }
