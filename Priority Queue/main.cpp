@@ -6,15 +6,18 @@ struct Node {
     int priority;
     Node* next;
 };
+
 Node* front = NULL;
 Node* rear = NULL;
 
 void insert(int p,int d) {
     Node *newNode = new Node;
+    
     newNode -> data = d;
     newNode -> priority = p;
     newNode -> next = NULL;
-    if (front==NULL && rear==NULL) {
+    
+	if (front==NULL && rear==NULL) {
         front=rear=newNode;
         return;
     }
@@ -47,6 +50,14 @@ void Display() {
     }
     cout << endl;
 }
+void deQueue(){
+	if(front==rear){
+		front=rear=nullptr;
+		return;
+	}
+	front = front->next;
+	
+}
 int main() {
 
     insert(1,22);
@@ -61,4 +72,16 @@ int main() {
 
     Display();
 }
+
+
+{1,55},{2,3},{3,88},{3,44},{4,5},{5,77};
+
+1,55
+2,33
+3,44
+4,5
+5,77
+
+
+
 
