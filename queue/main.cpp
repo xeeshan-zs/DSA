@@ -1,4 +1,4 @@
-0#include <iostream>
+#include <iostream>
 using namespace std;
 
 int Queue[5], n = 5, x, y, front = -1, rear = -1;

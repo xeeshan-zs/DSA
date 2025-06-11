@@ -1,13 +1,23 @@
 #include <iostream>
 using namespace std;
 
-int arr[10];
+int length=10;
+int arr[length];
+
 int front=-1;
 int rear=-1;
+
 void enqueue(int);
 void dequeue();
 void display();
 void peek();
+
+bool isEmpty(){
+	if(rear!= lenght-1){
+		return true;
+	}
+}
+
 int main() {
 
     enqueue(1);

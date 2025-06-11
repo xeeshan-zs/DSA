@@ -1,15 +1,18 @@
 #include<iostream>
 using namespace std;
+
 struct Node{
 int key;
 Node *left;
 Node*right;
+
 Node (int item){
 	key=item;
 	left=NULL;
 	right=NULL;
 }
 };
+
 Node*insert(Node*node,int key){
 	if (node==NULL)
 	return new Node(key);

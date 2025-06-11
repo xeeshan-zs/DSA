@@ -80,6 +80,15 @@ int main(){
     root->right->left = new Node(12);
     root->right->right = new Node(18);
     int x = 15;
+    
+    /*
+        10
+       /  \
+      5    15
+          /  \
+        12    18
+
+	*/
 
     root = delNode(root, x);
     inorder(root);
