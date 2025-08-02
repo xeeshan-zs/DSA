@@ -18,6 +18,7 @@ void insert(){
 		Cirqueue[rear]=x;
 	}
 }
+
 int peek(){
 	if(front==-1){
 		return 0;
